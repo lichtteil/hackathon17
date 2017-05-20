@@ -65,7 +65,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			{weight:540000, header: 'Leuchtmittel', count: 4500, consumption: 540000},
 			{weight:420000, header: 'Computer', count: 1500, consumption: 420000},
 			{weight:210000, header: 'Monitore', count: 1500, consumption: 210000},
-			{weight:170000, header: 'Server', count: 10, consumption: 170000},
+			{weight:51000, header: 'Server', count: 30, consumption: 51000},
 			{weight: 5000, header: 'Drucker', count: 8, consumption: 5000}
 		];
 		
