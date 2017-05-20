@@ -1,9 +1,9 @@
 
 
 requirejs.config({
-    "baseUrl": "http://hackathon.lichtteil.de/js/lib",
+    "baseUrl": "https://hackathon.lichtteil.de/js/lib",
     "paths": {
-      "app": "http://hackathon.lichtteil.de/js/app",
+      "app": "https://hackathon.lichtteil.de/js/app",
       "jquery": "https://code.jquery.com/jquery-3.2.1.min"
     }
 });
