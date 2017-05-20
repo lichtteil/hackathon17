@@ -3,6 +3,10 @@
 define(['jquery', 'https://www.gstatic.com/charts/loader.js'], function($) {
 	return function () {
 
+		if ($('#chartFirstReport').length === 0) {
+			return;
+		}
+
 		google.charts.load('current', {'packages':['corechart']});
 		google.charts.setOnLoadCallback(drawChart);
 
