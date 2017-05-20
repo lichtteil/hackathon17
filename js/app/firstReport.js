@@ -12,19 +12,21 @@ define(['jquery', 'https://www.gstatic.com/charts/loader.js'], function($) {
 
 		function drawChart() {
 			var data = google.visualization.arrayToDataTable([
-				['Typ', 'Eigener Verbrauch', 'Mitbewerber mit geringstem Verbrauch', 'Branchen-Durchschnitt'],
-				['Leuchtmittel',	900,	938,	950],
-				['Drucker',			1300,	1120,	1200],
-				['Monitore',		1167,	1207,	1180],
-				['Server',			1210,	1010,	1100],
-				['2008/09',			991,	1191,	1000]
+				['Typ', 'Eigener Verbrauch', {role: 'style'}, 'Mitbewerber mit geringstem Verbrauch', {role: 'style'}, 'Branchen-Durchschnitt'],
+				['Leuchtmittel',	900,	'#FDD835', 938,	'#9E9E9E',	950, ],
+				['Drucker',			1300, '#2CCCE4',	1120,	'#9E9E9E',	1200],
+				['Monitore',		1167, '#8C9EFF',	1207,	'#9E9E9E',	1180],
+				['Server',			1210, '#B8E986',	1010,	'#9E9E9E',	1100]
 			  ]);
 
 			var options = {
 				vAxis: {title: 'Kosten/€'},
 				hAxis: {title: 'Verbrauchertyp'},
 				seriesType: 'bars',
-				series: {2: {type: 'steppedArea'}}
+				series: {
+					2: {type: 'steppedArea', color: '#D2DDE7'}
+				},
+				legend: { position: 'bottom' }
 			};
 
 			var chart = new google.visualization.ComboChart(document.getElementById('chartFirstReport'));
