@@ -54,7 +54,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 				ranges[i] = ranges[i]/total;
 				carriage = ranges[i]-w;
 				$('#countSpan'+i).html(parseInt(sliderConfig[i].count*ranges[i]));
-				$('#consumptionSpan'+i).html(parseInt(sliderConfig[i].count*ranges[i]));
+				$('#consumptionSpan'+i).html(parseInt(sliderConfig[i].consumption*ranges[i]));
 			}
 		}
 		
