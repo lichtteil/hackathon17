@@ -17,3 +17,9 @@
 	transform: scale(0,0);
 	opacity: .2;
 }
+
+
+
+#chartFirstReport {
+	height: 400px;
+}
