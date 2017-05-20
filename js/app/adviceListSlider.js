@@ -45,6 +45,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			{weight:25, header: 'Halogen'}
 		];
 		createSlider(container, "slider1", sliderConfig1);
+		$('#slider1').hide();
 		
 		var sliderConfig2 = [
 			{weight:5, header: 'LEDs'},
