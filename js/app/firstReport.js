@@ -25,8 +25,7 @@ define(['jquery', 'https://www.gstatic.com/charts/loader.js'], function($) {
 				seriesType: 'bars',
 				series: {
 					2: {type: 'steppedArea', color: '#D2DDE7'}
-				},
-				legend: { position: 'bottom' }
+				}
 			};
 
 			var chart = new google.visualization.ComboChart(document.getElementById('chartFirstReport'));
