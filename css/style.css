@@ -23,3 +23,112 @@
 #chartFirstReport {
 	height: 400px;
 }
+
+
+
+table.sliderTable {
+  border-spacing: 0px;  
+}
+
+.barColor0 {
+  background-color: #2ccce4;
+}
+
+.edgeColor0 {
+  background-color: white;
+  color: #2ccce4;
+}
+
+.barColor1 {
+  background-color: #fdd835;
+}
+
+.edgeColor1 {
+  background-color: white;
+  color: #fdd835;
+}
+
+.barColor2 {
+  background-color: #8c9eff;
+}
+
+.edgeColor2 {
+  background-color: white;
+  color: #8c9eff;
+}
+
+.barColor3 {
+  background-color: #b8e986;
+}
+
+.edgeColor3 {
+  background-color: white;
+  color: #b8e986;
+}
+
+
+td.sliderTd {
+  position: relative;
+  padding: 1px;
+  overflow: visible;
+}
+
+
+.edge {
+  width: 6px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  outline:3px solid;
+}
+
+.edge.left {
+  position: absolute;
+  left:3px;
+  top: 3px;
+}
+
+.edge.right {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+.sliderBar {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: 6px;
+  display: inline-block;
+}
+
+.sliderTooltip {
+  position: absolute;
+  right: -40px;
+  width: 100px;
+  top: -100px;
+  height: 75px;
+  outline: 3px solid;
+}
+
+.sliderTooltipHeader {
+  width: 100%;
+  height: 20px;
+}
+
+.sliderTooltipHeader span{
+  color: white;
+}
+
+.sliderTooltip:after {
+    border-top: 10px solid;
+    border-left: 7px solid transparent; 
+    border-right: 7px solid transparent; 
+    top: 75px;
+    content: "";
+    position: absolute;
+    left: 40%;
+    margin-left: 5px;
+    width: 0; 
+    height: 0;
+}
