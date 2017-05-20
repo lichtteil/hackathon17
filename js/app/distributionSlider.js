@@ -36,7 +36,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			liveDrag:true,
 		//    gripInnerHtml:"<div class='grip'></div>", 
 		//    draggingClass:"dragging",
-			onResize:onSlider,
+		//	onResize:onSlider,
 				});
 		}
 		
