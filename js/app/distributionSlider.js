@@ -40,8 +40,8 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 				});
 		}
 		
-		var onSlider = function(e) {
-			var columns = $(e.currentTarget).find("td");
+		var onSlider = function() {
+			var columns = $('#'+sliderId).find("td");
 			console.log(columns);
 		  var ranges = [], total = 0, i, s = "Ranges: ", w;
 			for(i = 0; i<columns.length; i++){
@@ -52,8 +52,8 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			for(i=0; i<columns.length; i++){			
 				ranges[i] = ranges[i]/total;
 				carriage = ranges[i]-w;
-				$('#countSpan'+i).html(sliderConfig[i].count*ranges[i]);
-				$('#consumptionSpan'+i).html(sliderConfig[i].count*ranges[i]);
+				$('#countSpan'+i).html(parseInt(sliderConfig[i].count*ranges[i]));
+				$('#consumptionSpan'+i).html(parseInt(sliderConfig[i].count*ranges[i]));
 			}
 		}
 		
@@ -71,6 +71,6 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 		totalConsumption = 330000;
 		
 		createSlider(container, "slider1", sliderConfig);
-
+		onSlider();
 	};
 });
