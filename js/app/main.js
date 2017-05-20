@@ -1,6 +1,6 @@
 
 
-define(['jquery', 'https://www.gstatic.com/charts/loader.js', 'app/sampleChart'], function($, googleChartLoader, sampleChart) {
+define(['jquery', 'app/sampleChart'], function($, sampleChart) {
 
 	console.log('hello!');
 
