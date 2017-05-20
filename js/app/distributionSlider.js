@@ -29,7 +29,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			tdEl.setAttribute("height", "30px");
 			tdEl.setAttribute("class", "sliderTd");
 			trEl.appendChild(tdEl);
-			$(tdEl).html("<div class='sliderBar barColor"+i+"'></div><div class='edge left edgeColor"+i+"'></div><div class='edge right edgeColor"+i+"'></div><div class='sliderTooltip edgeColor"+i+"'><div class='sliderTooltipHeader barColor"+i+"'></div><span id='countSpan" + i +"'></span> Stück<br/><span id='consumptionSpan"+i+"'></span> kWh</div>");
+			$(tdEl).html("<div class='sliderBar barColor"+i+"'></div><div class='edge left edgeColor"+i+"'></div><div class='edge right edgeColor"+i+"'></div><div class='sliderTooltip edgeColor"+i+"'><div class='sliderTooltipHeader barColor"+i+"'><span>" + config[i].header +"</span></div><span id='countSpan" + i +"'></span> Stück<br/><span id='consumptionSpan"+i+"'></span> kWh</div>");
 		  }
 			container.appendChild(tableEl);
 			
@@ -62,14 +62,14 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 		var container = document.getElementById('distributionSlider');
 		
 		sliderConfig = [
-			{weight:54000, header: 'Leuchtmittel', count: 450, consumption: 54000},
-			{weight:42000, header: 'Computer', count: 150, consumption: 42000},
-			{weight:21000, header: 'Monitore', count: 150, consumption: 21000},
-			{weight:17000, header: 'Server', count: 10, consumption: 17000},
-			{weight: 500, header: 'Drucker', count: 8, consumption: 500}
+			{weight:540000, header: 'Leuchtmittel', count: 4500, consumption: 540000},
+			{weight:420000, header: 'Computer', count: 1500, consumption: 420000},
+			{weight:210000, header: 'Monitore', count: 1500, consumption: 210000},
+			{weight:170000, header: 'Server', count: 10, consumption: 170000},
+			{weight: 5000, header: 'Drucker', count: 8, consumption: 5000}
 		];
 		
-		totalConsumption = 330000;
+		totalConsumption = 3300000;
 		
 		createSlider(container, "slider1", sliderConfig);
 		onSlider();
