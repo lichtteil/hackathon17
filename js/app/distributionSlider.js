@@ -1,7 +1,7 @@
 
 
 define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.js'], function($) {
-	// jQuery = $;
+	jQuery = $;
 	return function () {
 
 		function createSlider(container, sliderId, config) {
@@ -29,7 +29,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			tdEl.setAttribute("height", "30px");
 			tdEl.setAttribute("class", "sliderTd");
 			trEl.appendChild(tdEl);
-			$(tdEl).html("<div class='sliderBar barColor"+i+"'></div><div class='edge left edgeColor"+i+"'></div><div class='edge right edgeColor"+i+"'></div><div class='sliderTooltip edgeColor"+i+"'><div class='sliderTooltipHeader barColor"+i+"'><span id='countSpan" + i +"'></span>Stück<br/><span id='consumptionSpan"+i+"'></span>kWh</div></div>");
+			$(tdEl).html("<div class='sliderBar barColor"+i+"'></div><div class='edge left edgeColor"+i+"'></div><div class='edge right edgeColor"+i+"'></div><div class='sliderTooltip edgeColor"+i+"'><div class='sliderTooltipHeader barColor"+i+"'></div><span id='countSpan" + i +"'></span> Stück<br/><span id='consumptionSpan"+i+"'></span> kWh</div>");
 		  }
 			container.appendChild(tableEl);
 			
