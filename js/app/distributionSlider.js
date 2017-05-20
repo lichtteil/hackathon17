@@ -53,8 +53,8 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			for(i=0; i<columns.length; i++){			
 				ranges[i] = ranges[i]/total;
 				carriage = ranges[i]-w;
-				$('#countSpan'+i).html(parseInt(sliderConfig[i].count*ranges[i]));
-				$('#consumptionSpan'+i).html(parseInt(sliderConfig[i].consumption*ranges[i]));
+				$('#countSpan'+i).html(parseInt(sliderConfig[i].count*ranges[i]/sliderConfig[i].initialRatio));
+				$('#consumptionSpan'+i).html(parseInt(sliderConfig[i].consumption*ranges[i]/sliderConfig[i].initialRatio));
 			}
 		}
 		
@@ -68,6 +68,13 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			{weight:51000, header: 'Server', count: 30, consumption: 51000},
 			{weight: 5000, header: 'Drucker', count: 8, consumption: 5000}
 		];
+		totalSliderWeight = 0;
+		for (i = 0; i<sliderConfig.length; i++) {
+			totalSliderWeight += sliderConfig[i].weight;
+		}
+		for (i = 0; i<sliderConfig.length; i++) {
+			sliderConfig[i].initialRatio = sliderConfig[i].weight/totalSliderWeight;
+		}
 		
 		totalConsumption = 3300000;
 		
