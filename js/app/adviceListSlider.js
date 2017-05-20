@@ -12,7 +12,6 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			
 
 		  var tableEl = document.createElement("table");
-		  tableEl.setAttribute("width", "500px");
 		  tableEl.setAttribute("class", "sliderTable");
 		  tableEl.setAttribute("id", sliderId);
 		  var tBodyEl = document.createElement("tbody");
@@ -35,10 +34,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			container.appendChild(tableEl);
 			
 			$('#'+sliderId).colResizable({
-			liveDrag:true,
-		//    gripInnerHtml:"<div class='grip'></div>", 
-		//    draggingClass:"dragging",
-			onResize:onSlider,
+			liveDrag:true
 				});
 		}
 		var container = document.getElementById('lightsSlider');

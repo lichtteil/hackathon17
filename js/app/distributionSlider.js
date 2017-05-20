@@ -11,7 +11,6 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			}
 		
 		  var tableEl = document.createElement("table");
-		  tableEl.setAttribute("width", "500px");
 		  tableEl.setAttribute("class", "sliderTable");
 		  tableEl.setAttribute("id", sliderId);
 		  var tBodyEl = document.createElement("tbody");

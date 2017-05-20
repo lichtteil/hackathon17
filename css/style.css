@@ -21,7 +21,15 @@
 
 
 
+#distributionSlider {
+	width: 775px;
+	margin-top: 120px;
+}
 
+#lightsSlider {
+	width: 775px;
+	margin-top: 120px;
+}
 
 
 table.sliderTable {
@@ -148,9 +156,6 @@ td.sliderTd {
 }
 
 
-.distributionSlider {
-	margin-top: 120px;
-}
 
 .sliderTooltipHeader {
   width: 100%;
