@@ -16,6 +16,9 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 				var costs = parseInt($('.costsTotal').text()) - costReduction;
 				$('.energyTotal').text(energy);
 				$('.costsTotal').text(costs);
+				$('#slider1').hide();
+				$('#slider2').show();
+				
 			}
 		});
 

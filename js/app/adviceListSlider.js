@@ -39,11 +39,28 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 		}
 		var container = document.getElementById('lightsSlider');
 		
-		sliderConfig = [
+		var sliderConfig1 = [
 			{weight:25, header: 'Glühlampen'},
 			{weight:50, header: 'Leuchtstoffröhren'},
 			{weight:25, header: 'Halogen'}
 		];
-		createSlider(container, "slider1", sliderConfig);
+		createSlider(container, "slider1", sliderConfig1);
+		
+		var sliderConfig2 = [
+			{weight:5, header: 'LEDs'},
+			{weight:65, header: 'Leuchtstoffröhren'},
+			{weight:30, header: 'Halogen'}
+		];
+		createSlider(container, "slider2", sliderConfig2);
+		$('#slider2').hide();
+		
+		var sliderConfig3 = [
+			{weight:5, header: 'LEDs'},
+			{weight:65, header: 'Leuchtstoffröhren'},
+			{weight:30, header: 'Halogen'}
+		];
+		createSlider(container, "slider3", sliderConfig2);
+		$('#slider3').hide();
+		
 	};
 });
