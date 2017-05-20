@@ -1,9 +1,10 @@
 
 
-define(['jquery', 'app/sampleChart'], function($, sampleChart) {
+define(['jquery', 'app/sampleChart', 'app/adviceList'], function($, initSampleChart, initAdviceList) {
 
 	console.log('hello!');
 
-	sampleChart();
+	initSampleChart();
+	initAdviceList();
 
 });

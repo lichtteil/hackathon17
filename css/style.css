@@ -1,0 +1,19 @@
+.simpleCart_shelfItem {
+	position: absolute;
+	top: 300px;
+	left: 10px;
+
+}
+
+.fadeOutAnimation {
+	transition: transform .3s linear .2s, opacity .8s linear;
+	-moz-transition: -moz-transform .3s linear .2s, opacity .8s linear;
+	-webkit-transition: -webkit-transform .3s linear .2s, opacity .8s linear;
+	-o-transition: -o-transform .3s linear .2s, opacity .8s linear;
+
+	-webkit-transform: scale(0,0);
+	-o-transform: scale(0,0);
+	-moz-transform: scale(0,0);
+	transform: scale(0,0);
+	opacity: .2;
+}
