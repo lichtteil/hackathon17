@@ -7,10 +7,11 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 			accept: ".advice",
 			tolerance: 'intersect',
 			drop: function( event, ui ) {
-				console.log(this, event, ui);
-				$(ui).addClass('active');
-				var energyReduction = parseInt($(ui).attr('data-energy-reduction'));
-				var costReduction = parseInt($(ui).attr('data-cost-reduction'));
+				var advice = ui.draggable;
+				$(advice).addClass('pointer');
+				$(advice).attr('data-energy-reduction', '500');
+				var energyReduction = parseInt($(advice).attr('data-energy-reduction'));
+				var costReduction = parseInt($(advice).attr('data-cost-reduction'));
 				var energy = parseInt($('.energyTotal').text()) - energyReduction;
 				var costs = parseInt($('.costsTotal').text()) - costReduction;
 				$('.energyTotal').text(energy);
