@@ -29,7 +29,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			tdEl.setAttribute("height", "30px");
 			tdEl.setAttribute("class", "sliderTd percentSlider");
 			trEl.appendChild(tdEl);
-			$(tdEl).html("<div class='sliderBar percentBarColor"+i+"'></div><div class='edge left percentEdgeColor"+i+"'></div><div class='edge right percentEdgeColor"+i+"'></div><div class='sliderTooltip percentEdgeColor"+i+"'><div class='sliderTooltipHeader percentBarColor"+i+"'><span>" + config[i].header +"</span></div><span id='percentSpan" + i +"'></span>" + config[i].weight + " %</div>");
+			$(tdEl).html("<div class='sliderBar percentBarColor"+i+"'></div><div class='edge left percentEdgeColor"+i+"'></div><div class='edge right percentEdgeColor"+i+"'></div><div class='sliderTooltip percentEdgeColor"+i+"'><div class='sliderTooltipHeader percentBarColor"+i+"'><span>" + config[i].header +"</span></div><span'></span>" + config[i].weight + " %</div>");
 		  }
 			container.appendChild(tableEl);
 			
