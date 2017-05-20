@@ -1,6 +1,7 @@
 
 
 define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.js'], function($) {
+	// jQuery = $;
 	return function () {
 
 		function createSlider(container, sliderId, config) {
@@ -41,7 +42,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 		}
 		
 		var onSlider = function() {
-			var columns = $('#'+sliderId).find("td");
+			var columns = $('#slider1').find("td");
 			console.log(columns);
 		  var ranges = [], total = 0, i, s = "Ranges: ", w;
 			for(i = 0; i<columns.length; i++){
