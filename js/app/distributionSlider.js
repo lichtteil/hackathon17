@@ -6,7 +6,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 
 		function createSlider(container, sliderId, config) {
 			
-			if ($('#distributionSlider').length === 0) {
+			if ($('#distributionSlider').length === 0 && $('#lightsSlider').length === 0) {
 				return;
 			}
 		
@@ -44,7 +44,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 		var onSlider = function() {
 			var columns = $('#slider1').find("td");
 			console.log(columns);
-		  var ranges = [], total = 0, i, s = "Ranges: ", w;
+			var ranges = [], total = 0, i, w;
 			for(i = 0; i<columns.length; i++){
 				w = columns.eq(i).width()-10 - (i==0?1:0);
 				ranges.push(w);
@@ -58,27 +58,30 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			}
 		}
 		
-		
-		var container = document.getElementById('distributionSlider');
-		
-		sliderConfig = [
-			{weight:540000, header: 'Leuchtmittel', count: 4500, consumption: 540000},
-			{weight:420000, header: 'Computer', count: 1500, consumption: 420000},
-			{weight:210000, header: 'Monitore', count: 1500, consumption: 210000},
-			{weight:51000, header: 'Server', count: 30, consumption: 51000},
-			{weight: 5000, header: 'Drucker', count: 8, consumption: 5000}
-		];
-		totalSliderWeight = 0;
-		for (i = 0; i<sliderConfig.length; i++) {
-			totalSliderWeight += sliderConfig[i].weight;
+		if ($('#lightsSlider').length === 1) {
+			
+		} else {
+			var container = document.getElementById('distributionSlider');
+			
+			sliderConfig = [
+				{weight:540000, header: 'Leuchtmittel', count: 4500, consumption: 540000},
+				{weight:420000, header: 'Computer', count: 1500, consumption: 420000},
+				{weight:210000, header: 'Monitore', count: 1500, consumption: 210000},
+				{weight:51000, header: 'Server', count: 30, consumption: 51000},
+	//			{weight: 5000, header: 'Drucker', count: 8, consumption: 5000}
+			];
+			totalSliderWeight = 0;
+			for (i = 0; i<sliderConfig.length; i++) {
+				totalSliderWeight += sliderConfig[i].weight;
+			}
+			for (i = 0; i<sliderConfig.length; i++) {
+				sliderConfig[i].initialRatio = sliderConfig[i].weight/totalSliderWeight;
+			}
+			
+			totalConsumption = 3300000;
+			
+			createSlider(container, "slider1", sliderConfig);
+			onSlider();
 		}
-		for (i = 0; i<sliderConfig.length; i++) {
-			sliderConfig[i].initialRatio = sliderConfig[i].weight/totalSliderWeight;
-		}
-		
-		totalConsumption = 3300000;
-		
-		createSlider(container, "slider1", sliderConfig);
-		onSlider();
 	};
 });

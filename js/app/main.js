@@ -5,13 +5,15 @@ define(['jquery',
 		'app/firstReport',
 		'app/adviceList',
 		'app/distributionSlider',
-		'app/testlabAdvices'
-		], function($, initSampleChart, initFirstReport, initAdviceList, initDistributionSlider, initTestlabAdvices) {
+		'app/testlabAdvices',
+		'app/adviceListSlider'
+		], function($, initSampleChart, initFirstReport, initAdviceList, initDistributionSlider, initTestlabAdvices, initadviceListSlider) {
 
 	initSampleChart();
 	initAdviceList();
 	initFirstReport();
 	initDistributionSlider();
 	initTestlabAdvices();
+	initadviceListSlider();
 
 });

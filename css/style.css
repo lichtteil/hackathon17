@@ -65,6 +65,43 @@ table.sliderTable {
 }
 
 
+.percentBarColor0 {
+  background-color: #F8E71C;
+}
+
+.percentEdgeColor0 {
+  background-color: white;
+  color: #F8E71C;
+}
+
+.percentBarColor1 {
+  background-color: #FDD835;
+}
+
+.percentEdgeColor1 {
+  background-color: white;
+  color: #FDD835
+}
+
+.percentBarColor2 {
+  background-color: #F5A623;
+}
+
+.percentEdgeColor2 {
+  background-color: white;
+  color: #F5A623
+}
+
+.percentBarColor3 {
+  background-color: #b8e986;
+}
+
+.percentEdgeColor3 {
+  background-color: white;
+  color: #b8e986;
+}
+
+
 td.sliderTd {
   position: relative;
   padding: 1px;
