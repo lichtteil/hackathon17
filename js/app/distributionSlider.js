@@ -4,6 +4,11 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 	return function () {
 
 		function createSlider(container, sliderId, config) {
+			
+			if ($('#distributionSlider').length === 0) {
+				return;
+			}
+		
 		  var tableEl = document.createElement("table");
 		  tableEl.setAttribute("width", "500px");
 		  tableEl.setAttribute("class", "sliderTable");
@@ -36,6 +41,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 		}
 		
 		var container = document.getElementById('distributionSlider');
+		
 		createSlider(container, "slider1", [
 			{weight: 10, header: 'Drucker'},
 			{weight:20, header: 'Leuchtmittel'},
