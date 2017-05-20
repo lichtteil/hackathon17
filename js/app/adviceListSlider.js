@@ -4,12 +4,13 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 	jQuery = $;
 	return function () {
 
+		if ($('#lightsSlider').length === 0) {
+			return;
+		}
+		
 		function createSlider(container, sliderId, config) {
 			
-			if ($('#lightsSlider').length === 0) {
-				return;
-			}
-		
+
 		  var tableEl = document.createElement("table");
 		  tableEl.setAttribute("width", "500px");
 		  tableEl.setAttribute("class", "sliderTable");
@@ -40,7 +41,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			onResize:onSlider,
 				});
 		}
-		var container = document.getElementById('distributionSlider');
+		var container = document.getElementById('lightsSlider');
 		
 		sliderConfig = [
 			{weight:25, header: 'Glühlampen'},
