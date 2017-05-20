@@ -3,10 +3,6 @@
 define(['jquery', 'https://www.gstatic.com/charts/loader.js'], function($) {
 	return function () {
 
-		if ($('#chart_div').length === 0) {
-			return;
-		}
-
 		google.charts.load('current', {'packages':['corechart']});
 		google.charts.setOnLoadCallback(drawChart);
 
@@ -27,7 +23,7 @@ define(['jquery', 'https://www.gstatic.com/charts/loader.js'], function($) {
 				series: {2: {type: 'steppedArea'}}
 			};
 
-			var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+			var chart = new google.visualization.ComboChart(document.getElementById('chartFirstReport'));
 			chart.draw(data, options);
 		}
 

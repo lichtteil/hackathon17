@@ -1,11 +1,11 @@
 
 
 requirejs.config({
-    "baseUrl": "https://hackathon.lichtteil.de/js/lib",
+    "baseUrl": "https://rawgit.com/lichtteil/hackathon17/master/js/lib",
     "paths": {
-      "app": "https://hackathon.lichtteil.de/js/app",
+      "app": "https://rawgit.com/lichtteil/hackathon17/master/js/app",
       "jquery": "https://code.jquery.com/jquery-3.2.1.min",
-      "simpleCart": "https://hackathon.lichtteil.de/js/lib/simpleCart.min",
+      "simpleCart": "https://rawgit.com/lichtteil/hackathon17/master/js/lib/simpleCart.min",
     }
 });
 
