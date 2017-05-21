@@ -15,7 +15,7 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 			return x1 + x2;
 		}
 
-		$('.adviceDroppable, #lightsSlider').droppable({
+		$('.advicedroppable').droppable({
 			accept: ".advice",
 			tolerance: 'pointer',
 			drop: function( event, ui ) {
@@ -24,14 +24,14 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 
 				var energyReduction = parseInt($(advice).attr('data-energy-reduction'));
 				var costReduction = parseInt($(advice).attr('data-cost-reduction'));
-				var energy = parseInt($('.energyTotal').attr('data-energy-total')) - energyReduction;
-				var costs = parseInt($('.costsTotal').attr('data-costs-total')) - costReduction;
+				var energy = parseInt($('.energytotal').attr('data-energy-total')) - energyReduction;
+				var costs = parseInt($('.coststotal').attr('data-costs-total')) - costReduction;
 
-				$('.energyTotal').text(addPoints(energy));
+				$('.energytotal').text(addPoints(energy));
 				$('.costsTotal').text(addPoints(costs));
 
-				$('.energyTotal').attr('data-energy-total') = energy;
-				$('.energyTotal').attr('data-costs-total') = costs;
+				$('.energytotal').attr('data-energy-total', energy);
+				$('.energytotal').attr('data-costs-total', costs);
 
 				$('#slider1').hide();
 				$('#slider2').show();
