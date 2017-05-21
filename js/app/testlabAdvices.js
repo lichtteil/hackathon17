@@ -9,7 +9,6 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 			drop: function( event, ui ) {
 				var advice = ui.draggable;
 				$(advice).addClass('active');
-				$(advice).attr('data-energy-reduction', '500');
 				var energyReduction = parseInt($(advice).attr('data-energy-reduction'));
 				var costReduction = parseInt($(advice).attr('data-cost-reduction'));
 				var energy = parseInt($('.energyTotal').text()) - energyReduction;
@@ -18,7 +17,6 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 				$('.costsTotal').text(costs);
 				$('#slider1').hide();
 				$('#slider2').show();
-				
 			}
 		});
 
