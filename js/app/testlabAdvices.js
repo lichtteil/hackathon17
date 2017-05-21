@@ -35,6 +35,8 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 
 				$('#slider1').hide();
 				$('#slider2').show();
+
+				$(advice).draggable('destroy');
 			}
 		});
 
