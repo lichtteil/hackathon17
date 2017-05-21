@@ -30,11 +30,8 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			trEl.appendChild(tdEl);
 			$(tdEl).html("<div class='sliderBar barColor"+i+"'></div><div class='edge left edgeColor"+i+"'></div><div class='edge right edgeColor"+i+"'></div><div class='sliderTooltip edgeColor"+i+"'><div class='sliderTooltipHeader barColor"+i+"'><span>" + config[i].header +"</span></div><span id='countSpan" + i +"'></span> Stück<br/><span id='consumptionSpan"+i+"'></span> kWh</div>");
 		  }
-			container.appendChild(tableEl);
-		  var totalLabel = document.createElement("span");
-		  totalLabel.setAttribute("class", "totalConsumption");
-		  $(totalLabel).html(totalWeight + " kWh");
-		  container.appendChild(totalLabel);
+		container.appendChild(tableEl);
+		  
 			
 			$('#'+sliderId).colResizable({
 			liveDrag:true,
