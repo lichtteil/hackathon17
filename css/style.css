@@ -44,20 +44,20 @@ table.sliderTable {
   border-spacing: 0px;
 }
 
-.barColor0 {
+.barColor1 {
   background-color: #2ccce4;
 }
 
-.edgeColor0 {
+.edgeColor1 {
   background-color: white;
   color: #2ccce4;
 }
 
-.barColor1 {
+.barColor0 {
   background-color: #fdd835;
 }
 
-.edgeColor1 {
+.edgeColor0 {
   background-color: white;
   color: #fdd835;
 }
