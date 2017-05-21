@@ -62,7 +62,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			{weight:65, header: 'Leuchtstoffröhren'},
 			{weight:30, header: 'Halogen'}
 		];
-		createSlider(container, "slider2Table", sliderConfig2);
+		createSlider(div2, "slider2Table", sliderConfig2);
 		$('#slider2').hide();
 	
 		var sliderConfig3 = [
@@ -70,7 +70,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			{weight:65, header: 'Leuchtstoffröhren'},
 			{weight:30, header: 'Halogen'}
 		];
-		createSlider(container, "slider3Table", sliderConfig3);
+		createSlider(div3, "slider3Table", sliderConfig3);
 		$('#slider3').hide();
 		
 	};
