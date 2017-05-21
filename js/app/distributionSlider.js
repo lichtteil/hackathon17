@@ -32,8 +32,9 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 		  }
 			container.appendChild(tableEl);
 		  var totalLabel = document.createElement("span");
-		  tableEl.setAttribute("class", "totalConsumption");
-		  $(tableEl).html(totalWeight + " kWh");
+		  totalLabel.setAttribute("class", "totalConsumption");
+		  $(totalLabel).html(totalWeight + " kWh");
+		  container.appendChild(totalLabel);
 			
 			$('#'+sliderId).colResizable({
 			liveDrag:true,

@@ -39,28 +39,38 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 		}
 		var container = document.getElementById('lightsSlider');
 		
+		var div1 = document.createElement("div");
+		div1.setAttribute("id", "slider1");
+		container.appendChild(div1);
+		var div2 = document.createElement("div");
+		div2.setAttribute("id", "slider2");
+		container.appendChild(div2);
+		var div3 = document.createElement("div");
+		div3.setAttribute("id", "slider3");
+		container.appendChild(div3);
+		
 		var sliderConfig1 = [
 			{weight:25, header: 'Glühlampen'},
 			{weight:50, header: 'Leuchtstoffröhren'},
 			{weight:25, header: 'Halogen'}
 		];
-		createSlider(container, "slider1", sliderConfig1);
-		$('#slider1').hide();
+		createSlider(div1, "slider1Table", sliderConfig1);
+		// $('#slider1').hide();
 		
 		var sliderConfig2 = [
 			{weight:5, header: 'LEDs'},
 			{weight:65, header: 'Leuchtstoffröhren'},
 			{weight:30, header: 'Halogen'}
 		];
-		createSlider(container, "slider2", sliderConfig2);
+		createSlider(container, "slider2Table", sliderConfig2);
 		$('#slider2').hide();
-		
+	
 		var sliderConfig3 = [
 			{weight:5, header: 'LEDs'},
 			{weight:65, header: 'Leuchtstoffröhren'},
 			{weight:30, header: 'Halogen'}
 		];
-		createSlider(container, "slider3", sliderConfig3);
+		createSlider(container, "slider3Table", sliderConfig3);
 		$('#slider3').hide();
 		
 	};
