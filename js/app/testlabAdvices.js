@@ -22,6 +22,8 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 				var advice = ui.draggable;
 				$(advice).addClass('active');
 
+				$('.savings-arrow').show();
+
 				var energyReduction = parseInt($(advice).attr('data-energy-reduction'));
 				var costReduction = parseInt($(advice).attr('data-cost-reduction'));
 				var energy = parseInt($('.energytotal').attr('data-energy-total')) - energyReduction;
