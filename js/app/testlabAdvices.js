@@ -27,11 +27,11 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 				var energy = parseInt($('.energytotal').attr('data-energy-total')) - energyReduction;
 				var costs = parseInt($('.coststotal').attr('data-costs-total')) - costReduction;
 
-				$('.energytotal').text(addPoints(energy));
-				$('.costsTotal').text(addPoints(costs));
+				$('.energytotal').text(addPoints(energy) + ' kWh');
+				$('.costsTotal').text(addPoints(costs) + '€');
 
 				$('.energytotal').attr('data-energy-total', energy);
-				$('.energytotal').attr('data-costs-total', costs);
+				$('.costsTotal').attr('data-costs-total', costs);
 
 				$('#slider1').hide();
 				$('#slider2').show();
