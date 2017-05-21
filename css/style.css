@@ -36,6 +36,10 @@
 	margin-top: 20px;
 }
 
+.percentTable {
+	width: 100%;
+}
+
 table.sliderTable {
   border-spacing: 0px;
 }

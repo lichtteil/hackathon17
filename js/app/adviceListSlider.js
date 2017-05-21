@@ -12,7 +12,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			
 
 		  var tableEl = document.createElement("table");
-		  tableEl.setAttribute("class", "sliderTable");
+		  tableEl.setAttribute("class", "sliderTable percentTable");
 		  tableEl.setAttribute("id", sliderId);
 		  var tBodyEl = document.createElement("tbody");
 		  tableEl.appendChild(tBodyEl);
@@ -41,12 +41,15 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 		
 		var div1 = document.createElement("div");
 		div1.setAttribute("id", "slider1");
+		div1.setClass("class", "percentTable");
 		container.appendChild(div1);
 		var div2 = document.createElement("div");
 		div2.setAttribute("id", "slider2");
+		div2.setClass("class", "percentTable");
 		container.appendChild(div2);
 		var div3 = document.createElement("div");
 		div3.setAttribute("id", "slider3");
+		div3.setClass("class", "percentTable");
 		container.appendChild(div3);
 		
 		var sliderConfig1 = [
