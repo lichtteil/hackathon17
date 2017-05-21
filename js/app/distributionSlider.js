@@ -31,6 +31,9 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			$(tdEl).html("<div class='sliderBar barColor"+i+"'></div><div class='edge left edgeColor"+i+"'></div><div class='edge right edgeColor"+i+"'></div><div class='sliderTooltip edgeColor"+i+"'><div class='sliderTooltipHeader barColor"+i+"'><span>" + config[i].header +"</span></div><span id='countSpan" + i +"'></span> Stück<br/><span id='consumptionSpan"+i+"'></span> kWh</div>");
 		  }
 			container.appendChild(tableEl);
+		  var totalLabel = document.createElement("span");
+		  tableEl.setAttribute("class", "totalConsumption");
+		  $(tableEl).html(totalWeight + " kWh");
 			
 			$('#'+sliderId).colResizable({
 			liveDrag:true,
@@ -66,7 +69,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 				{weight:540000, header: 'Leuchtmittel', count: 4500, consumption: 540000},
 				{weight:420000, header: 'Computer', count: 1500, consumption: 420000},
 				{weight:210000, header: 'Monitore', count: 1500, consumption: 210000},
-				{weight:51000, header: 'Server', count: 30, consumption: 51000},
+				{weight:120000, header: 'Server', count: 30, consumption: 120000},
 	//			{weight: 5000, header: 'Drucker', count: 8, consumption: 5000}
 			];
 			totalSliderWeight = 0;

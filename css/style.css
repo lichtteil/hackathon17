@@ -23,7 +23,7 @@
 
 #distributionSlider {
 	width: 775px;
-	margin-top: 120px;
+	margin-top: 50px;
 }
 
 #lightsSlider {
@@ -31,6 +31,10 @@
 	margin-top: 120px;
 }
 
+.totalConsumption {
+	float: right;
+	margin-top: 20px;
+}
 
 table.sliderTable {
   border-spacing: 0px;
