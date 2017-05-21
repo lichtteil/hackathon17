@@ -40,7 +40,8 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 
 
 		$('.advice').draggable({
-			revert: true
+			revert: true,
+			helper : 'clone'
 		});
 
 	};
