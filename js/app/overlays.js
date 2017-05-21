@@ -9,7 +9,7 @@ define(['jquery', 'https://www.gstatic.com/charts/loader.js'], function($) {
 			var url = $('.overlay').attr('data-url');
 			setTimeout(function() {
 				window.location = url;
-			});
+			}, 3000);
 		});
 
 	}
