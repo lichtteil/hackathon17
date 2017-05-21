@@ -5,10 +5,10 @@ define(['jquery', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'], functio
 
 		$('.adviceDroppable, #lightsSlider').droppable({
 			accept: ".advice",
-			tolerance: 'intersect',
+			tolerance: 'pointer',
 			drop: function( event, ui ) {
 				var advice = ui.draggable;
-				$(advice).addClass('pointer');
+				$(advice).addClass('active');
 				$(advice).attr('data-energy-reduction', '500');
 				var energyReduction = parseInt($(advice).attr('data-energy-reduction'));
 				var costReduction = parseInt($(advice).attr('data-cost-reduction'));
