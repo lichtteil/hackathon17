@@ -67,10 +67,10 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 			var container = document.getElementById('distributionSlider');
 			
 			sliderConfig = [
-				{weight:540000, header: 'Leuchtmittel', count: 4500, consumption: 540000},
-				{weight:420000, header: 'Computer', count: 1500, consumption: 420000},
-				{weight:210000, header: 'Monitore', count: 1500, consumption: 210000},
-				{weight:120000, header: 'Server', count: 30, consumption: 120000},
+				{weight:1040000, header: 'Leuchtmittel', count: 9000, consumption: 1040000},
+				{weight:920000, header: 'Computer', count: 1500, consumption: 920000},
+				{weight:520000, header: 'Monitore', count: 1500, consumption: 520000},
+				{weight:520000, header: 'Server', count: 30, consumption: 520000},
 	//			{weight: 5000, header: 'Drucker', count: 8, consumption: 5000}
 			];
 			totalSliderWeight = 0;
@@ -81,7 +81,7 @@ define(['jquery', 'http://www.bacubacu.com/colresizable/js/colResizable-1.5.min.
 				sliderConfig[i].initialRatio = sliderConfig[i].weight/totalSliderWeight;
 			}
 			
-			totalConsumption = 3300000;
+			totalConsumption = 3000000;
 			
 			createSlider(container, "slider1", sliderConfig);
 			onSlider();
